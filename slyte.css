@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    overflow-y:hidden;
+  }
+  video{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    height:100vh;
+    width: 100%;
+    object-fit:cover;
+  
+  }
+  .container{
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+  
+     }
+  .to-do{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+  }
+  
+   h1{
+    font-size:80px;
+    color:brown;
+    position: relative;
+    bottom: 30px;
+    }
+    label{
+        font-size:40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:sandybrown;
+      }
+      .input{
+        background-color:transparent;
+        font-size: 3rem;
+        border-radius:6px ;
+        position: relative;
+        top:4px;
+      }
+      .add-btn{
+
+        cursor: pointer;
+        color:blanchedalmond;
+        font-size:2rem;
+        padding: 12px 20px ;
+        border-radius:6px ;
+        bottom:20px;
+        background-color:transparent;
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       
+      }
+      .add-btn:hover{
+        background-color: #555;
+        transition: all 0.5s;
+}
+       .list{
+       text-align: center;
+     }
+     .el{
+        cursor: pointer;
+        display: flex;
+        justify-content:space-between;
+         border-radius: 6px;
+         padding: 12px 20px ;
+         
+        
+
+         
+      }
+      .el:hover{
+        background-color:#999;
+        transition: all 0.5s;
+      }
+       
+      .btn{
+        
+        cursor: pointer;
+        border-radius:5px;
+        background-color: transparent;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: wheat;
+        font-size: 20px;
+        padding: 5px 15px;
+       
+        
+      }
+      .btn:hover{
+        background-color: #666;
+        transition: all 0.5s;
+      }
+      span{
+        font-size:22px; 
+      }
+      @media(max-width: 768px){
+        video{
+          position:absolute;
+          object-fit: cover;
+        }
+
+        h1{
+          font-size: 50px;
+        }
+        label{
+         position: relative;
+         right: 0.5px;
+        }
+        input{
+          width:350px;
+          padding: 2px 5px;
+        }
+        .btn:hover{
+          background-color: #333;
+          transition: all 0.5s;
+        }
+       
+        
+      }
+     
+
